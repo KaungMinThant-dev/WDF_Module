@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'slms.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'slms_db',
+        'NAME': 'wdf12',
         'USER': 'root',
-        'PASSWORD': 'Btsarmy2005#',
-        'HOST': '127.0.0.1',
+        'PASSWORD': 'Shann2006',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }
@@ -127,3 +127,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
